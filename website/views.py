@@ -17,18 +17,29 @@ def home():
         db.session.commit()
 
         '''Put the name of the select in as the string'''
-        pick_10 = request.form.get('10')
-        pick_9 = request.form.get('9')
-        pick_8 = request.form.get('8')
-        pick_7 = request.form.get('7')
-        pick_6 = request.form.get('6')
-        pick_5 = request.form.get('5')
-        pick_4 = request.form.get('4')
-        pick_3 = request.form.get('3')
-        pick_2 = request.form.get('2')
-        pick_1 = request.form.get('1')
+        game1Pick = request.form.get('game1Pick')
+        game2Pick = request.form.get('game2Pick')
+        game3Pick = request.form.get('game3Pick')
+        game4Pick = request.form.get('game4Pick')
+        game5Pick = request.form.get('game5Pick')
+        game6Pick = request.form.get('game6Pick')
+        game7Pick = request.form.get('game7Pick')
+        game8Pick = request.form.get('game8Pick')
+        game9Pick = request.form.get('game9Pick')
+        game10Pick = request.form.get('game10Pick')
+        game11Pick = request.form.get('game11Pick')
+        game12Pick = request.form.get('game12Pick')
+        game13Pick = request.form.get('game13Pick')
+        game14Pick = request.form.get('game14Pick')
+        game15Pick = request.form.get('game15Pick')
+        game16Pick = request.form.get('game16Pick')
 
-        new_picks =  Note(pick_10=pick_10, pick_9=pick_9, pick_8=pick_8, pick_7=pick_7, pick_6=pick_6, pick_5=pick_5, pick_4=pick_4, pick_3=pick_3, pick_2=pick_2, pick_1=pick_1, user_id = current_user.id)
+        new_picks =  Note(game1Pick = game1Pick, game2Pick = game2Pick, game3Pick = game3Pick, 
+                          game4Pick = game4Pick, game5Pick = game5Pick, game6Pick = game6Pick, 
+                          game7Pick = game7Pick, game8Pick = game8Pick, game9Pick = game9Pick, 
+                          game10Pick = game10Pick, game11Pick = game11Pick, game12Pick = game12Pick, 
+                          game13Pick = game13Pick, game14Pick = game14Pick, game15Pick = game15Pick, 
+                          game16Pick = game16Pick, user_id = current_user.id)
         db.session.add(new_picks)
         db.session.commit()
 
