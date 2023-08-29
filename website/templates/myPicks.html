@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block title %}My Picks{% endblock %}
+
+{% block content %}
+    {% for pick in user.notes %}
+    <!--First game-->
+    <div style="width: 250px; height: 27px; left: 399px; top: 84px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game1Pick }}</div>
+    <div class="teamNamesLeft" style="top: 114px; background-color:lightcoral">{{ arr2[0] }}</div>
+    <div class="teamNamesLeft" style="top: 70px; background-color:lightgreen">{{ arr1[0] }}</div>
+
+    <!--Second game-->
+    <div style="width: 250px; height: 27px; left: 399px; top: 191px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game2Pick }}</div>
+    <div class="teamNamesLeft" style="top: 221px">{{ arr2[1] }}</div>
+    <div class="teamNamesLeft" style="top: 177px">{{ arr1[1] }}</div>
+
+    <!--Third game-->
+    <div style="width: 250px; height: 27px; left: 399px; top: 298px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game3Pick }}</div>
+    <div class="teamNamesLeft" style="top: 328px">{{ arr2[2] }}</div>
+    <div class="teamNamesLeft" style="top: 284px">{{ arr1[2] }}</div>
+
+    <!--Fourth game-->
+    <div style="width: 250px; height: 27px; left: 399px; top: 405px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game4Pick }}</div>
+    <div class="teamNamesLeft" style="top: 435px">{{ arr2[3] }}</div>
+    <div class="teamNamesLeft" style="top: 391px">{{ arr1[3] }}</div>
+    
+    <!--Fifth game-->
+    <div style="width: 250px; height: 27px; left: 399px; top: 512px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game5Pick }}</div>
+    <div class="teamNamesLeft" style="top: 542px">{{ arr2[4] }}</div>
+    <div class="teamNamesLeft" style="top: 498px">{{ arr1[4] }}</div>
+
+    <!--Sixth game-->
+    <div style="width: 250px; height: 27px; left: 399px; top: 619px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game6Pick }}</div>
+    <div class="teamNamesLeft" style="top: 649px">{{ arr2[5] }}</div>
+    <div class="teamNamesLeft" style="top: 605px">{{ arr1[5] }}</div>
+
+    <!--Seventh game-->
+    <div style="width: 250px; height: 27px; left: 399px; top: 726px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game7Pick }}</div>
+    <div class="teamNamesLeft" style="top: 756px">{{ arr2[6] }}</div>
+    <div class="teamNamesLeft" style="top: 712px">{{ arr1[6] }}</div>
+
+    <!--Eigth game-->
+    <div style="width: 250px; height: 27px; left: 399px; top: 833px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game8Pick }}</div>
+    <div class="teamNamesLeft" style="top: 863px">{{ arr2[7] }}</div>
+    <div class="teamNamesLeft" style="top: 819px">{{ arr1[7] }}</div>
+
+
+
+
+    <!--Ninth game-->
+    <div style="width: 250px; height: 27px; left: 1153px; top: 84px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game9Pick }}</div>
+    <div class="teamNamesRight" style="top: 114px">{{ arr2[8] }}</div>
+    <div class="teamNamesRight" style="top: 70px">{{ arr1[8] }}</div>
+
+    <!--Tenth game-->
+    <div style="width: 250px; height: 27px; left: 1153px; top: 191px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game10Pick }}</div>
+    <div class="teamNamesRight" style="top: 221px">{{ arr2[9] }}</div>
+    <div class="teamNamesRight" style="top: 177px">{{ arr1[9] }}</div>
+
+    <!--Eleventh game-->
+    <div style="width: 250px; height: 27px; left: 1153px; top: 298px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game11Pick }}</div>
+    <div class="teamNamesRight" style="top: 328px">{{ arr2[10] }}</div>
+    <div class="teamNamesRight" style="top: 284px">{{ arr1[10] }}</div>
+
+    <!--Twelfth game-->
+    <div style="width: 250px; height: 27px; left: 1153px; top: 405px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game12Pick }}</div>
+    <div class="teamNamesRight" style="top: 435px">{{ arr2[11] }}</div>
+    <div class="teamNamesRight" style="top: 391px">{{ arr1[11] }}</div>
+
+    <!--Thirteenth game-->
+    <div style="width: 250px; height: 27px; left: 1153px; top: 512px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game13Pick }}</div>
+    <div class="teamNamesRight" style="top: 542px">{{ arr2[12] }}</div>
+    <div class="teamNamesRight" style="top: 498px">{{ arr1[12] }}</div>
+
+    <!--Fourteenth game-->
+    <div style="width: 250px; height: 27px; left: 1153px; top: 619px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game14Pick }}</div>
+    <div class="teamNamesRight" style="top: 649px">{{ arr2[13] }}</div>
+    <div class="teamNamesRight" style="top: 605px">{{ arr1[13] }}</div>
+
+    <!--Fifteenth game-->
+    <div style="width: 250px; height: 27px; left: 1153px; top: 726px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game15Pick }}</div>
+    <div class="teamNamesRight" style="top: 756px">{{ arr2[14] }}</div>
+    <div class="teamNamesRight" style="top: 712px">{{ arr1[14] }}</div>
+
+    <!--Sixteenth game-->
+    <div style="width: 250px; height: 27px; left: 1153px; top: 833px; position: absolute; background: #D9D9D9; text-align: center">{{ pick.game16Pick }}</div>
+    <div class="teamNamesRight" style="top: 863px">{{ arr2[15] }}</div>
+    <div class="teamNamesRight" style="top: 818px">{{ arr1[15] }}</div>
+    {% endfor %}
+
+    <!--Left row of spread boxes-->
+    <div class="miniOddsLeft" style="top: 97px">{{ arr3[0] }}</div>
+    <div class="miniOddsLeft" style="top: 205px">{{ arr3[1] }}</div>
+    <div class="miniOddsLeft" style="top: 311px">{{ arr3[2] }}</div>
+    <div class="miniOddsLeft" style="top: 419px">{{ arr3[3] }}</div>
+    <div class="miniOddsLeft" style="top: 527px">{{ arr3[4] }}</div>
+    <div class="miniOddsLeft" style="top: 635px">{{ arr3[5] }}</div>
+    <div class="miniOddsLeft" style="top: 741px">{{ arr3[6] }}</div>
+    <div class="miniOddsLeft" style="top: 849px">{{ arr3[7] }}</div>
+
+    <!--Right row of spread boxes-->
+    <div class="miniOddsRight" style="top: 98px">{{ arr3[8] }}</div>
+    <div class="miniOddsRight" style="top: 206px">{{ arr3[9] }}</div>
+    <div class="miniOddsRight" style="top: 312px">{{ arr3[10] }}</div>
+    <div class="miniOddsRight" style="top: 420px">{{ arr3[11] }}</div>
+    <div class="miniOddsRight" style="top: 528px">{{ arr3[12] }}</div>
+    <div class="miniOddsRight" style="top: 636px">{{ arr3[13] }}</div>
+    <div class="miniOddsRight" style="top: 742px">{{ arr3[14] }}</div>
+    <div class="miniOddsRight" style="top: 850px">{{ arr3[15] }}</div>
+
+{% endblock %}
