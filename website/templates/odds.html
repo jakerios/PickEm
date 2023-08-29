@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Odds{% endblock %}
+
+{% block content %}
+
+<div class="childTable">
+    <table>
+        <thead>
+            <tr>
+                <th>Favorite Team</th>
+                <th>Line</th>
+                <th>Underdog Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in arr1 %}
+            <tr>
+                <td align="center">{{ i }}</td>
+                <td class="points" align="center">{{ arr3[(loop.index)-1] }}</td>
+                <td align="center">{{ arr2[(loop.index)-1] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <caption>Odds courtesy of DraftKings</caption>
+    </table>
+</div>
+
+{% endblock %}

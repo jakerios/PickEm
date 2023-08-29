@@ -2,30 +2,7 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="parentContainer">
-    <div class="childTable">
-        <span style='float:right'><table>
-            <thead>
-                <tr>
-                    <th>Favorite Team</th>
-                    <th>Line</th>
-                    <th>Underdog Team</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for i in arr1 %}
-                <tr>
-                    <td align="center">{{ i }}</td>
-                    <td class="points" align="center">{{ arr3[(loop.index)-1] }}</td>
-                    <td align="center">{{ arr2[(loop.index)-1] }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-            <caption>Odds courtesy of DraftKings</caption>
-        </table>
-        </span>
-    </div>
-
+    <!--
     <div class="childOrderedList">
         <form method="POST">
             <span style='float:left'><ol class="list-group list-group-flush" reversed></span>
@@ -48,7 +25,179 @@
             </ol>
         </form>
     </div>
+    -->
 
+    <!--First game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 399px; top: 84px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[0] }}">{{ arr1[0] }}</option>
+        <option value="{{ arr2[0] }}">{{ arr2[0] }}</option>
+    </select>
+    <div class="teamNamesLeft" style="top: 114px; background-color:lightcoral">{{ arr2[0] }}</div>
+    <div class="teamNamesLeft" style="top: 70px; background-color:lightgreen">{{ arr1[0] }}</div>
+
+    <!--Second game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 399px; top: 191px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[1] }}">{{ arr1[1] }}</option>
+        <option value="{{ arr2[1] }}">{{ arr2[1] }}</option>
+    </select>
+    <div class="teamNamesLeft" style="top: 221px">{{ arr2[1] }}</div>
+    <div class="teamNamesLeft" style="top: 177px">{{ arr1[1] }}</div>
+
+    <!--Third game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 399px; top: 298px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[2] }}">{{ arr1[2] }}</option>
+        <option value="{{ arr2[2] }}">{{ arr2[2] }}</option>
+    </select>
+    <div class="teamNamesLeft" style="top: 328px">{{ arr2[2] }}</div>
+    <div class="teamNamesLeft" style="top: 284px">{{ arr1[2] }}</div>
+
+    <!--Fourth game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 399px; top: 405px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[3] }}">{{ arr1[3] }}</option>
+        <option value="{{ arr2[3] }}">{{ arr2[3] }}</option>
+    </select>
+    <div class="teamNamesLeft" style="top: 435px">{{ arr2[3] }}</div>
+    <div class="teamNamesLeft" style="top: 391px">{{ arr1[3] }}</div>
+    
+    <!--Fifth game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 399px; top: 512px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[4] }}">{{ arr1[4] }}</option>
+        <option value="{{ arr2[4] }}">{{ arr2[4] }}</option>
+    </select>
+    <div class="teamNamesLeft" style="top: 542px">{{ arr2[4] }}</div>
+    <div class="teamNamesLeft" style="top: 498px">{{ arr1[4] }}</div>
+
+    <!--Sixth game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 399px; top: 619px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[5] }}">{{ arr1[5] }}</option>
+        <option value="{{ arr2[5] }}">{{ arr2[5] }}</option>
+    </select>
+    <div class="teamNamesLeft" style="top: 649px">{{ arr2[5] }}</div>
+    <div class="teamNamesLeft" style="top: 605px">{{ arr1[5] }}</div>
+
+    <!--Seventh game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 399px; top: 726px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[6] }}">{{ arr1[6] }}</option>
+        <option value="{{ arr2[6] }}">{{ arr2[6] }}</option>
+    </select>
+    <div class="teamNamesLeft" style="top: 756px">{{ arr2[6] }}</div>
+    <div class="teamNamesLeft" style="top: 712px">{{ arr1[6] }}</div>
+
+    <!--Eigth game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 399px; top: 833px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[7] }}">{{ arr1[7] }}</option>
+        <option value="{{ arr2[7] }}">{{ arr2[7] }}</option>
+    </select>
+    <div class="teamNamesLeft" style="top: 863px">{{ arr2[7] }}</div>
+    <div class="teamNamesLeft" style="top: 819px">{{ arr1[7] }}</div>
+
+
+
+
+    <!--Ninth game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 1153px; top: 84px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[8] }}">{{ arr1[8] }}</option>
+        <option value="{{ arr2[8] }}">{{ arr2[8] }}</option>
+    </select>
+    <div class="teamNamesRight" style="top: 114px">{{ arr2[8] }}</div>
+    <div class="teamNamesRight" style="top: 70px">{{ arr1[8] }}</div>
+
+    <!--Tenth game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 1153px; top: 191px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[9] }}">{{ arr1[9] }}</option>
+        <option value="{{ arr2[9] }}">{{ arr2[9] }}</option>
+    </select>
+    <div class="teamNamesRight" style="top: 221px">{{ arr2[9] }}</div>
+    <div class="teamNamesRight" style="top: 177px">{{ arr1[9] }}</div>
+
+    <!--Eleventh game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 1153px; top: 298px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[10] }}">{{ arr1[10] }}</option>
+        <option value="{{ arr2[10] }}">{{ arr2[10] }}</option>
+    </select>
+    <div class="teamNamesRight" style="top: 328px">{{ arr2[10] }}</div>
+    <div class="teamNamesRight" style="top: 284px">{{ arr1[10] }}</div>
+
+    <!--Twelfth game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 1153px; top: 405px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[11] }}">{{ arr1[11] }}</option>
+        <option value="{{ arr2[11] }}">{{ arr2[11] }}</option>
+    </select>
+    <div class="teamNamesRight" style="top: 435px">{{ arr2[11] }}</div>
+    <div class="teamNamesRight" style="top: 391px">{{ arr1[11] }}</div>
+
+    <!--Thirteenth game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 1153px; top: 512px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[12] }}">{{ arr1[12] }}</option>
+        <option value="{{ arr2[12] }}">{{ arr2[12] }}</option>
+    </select>
+    <div class="teamNamesRight" style="top: 542px">{{ arr2[12] }}</div>
+    <div class="teamNamesRight" style="top: 498px">{{ arr1[12] }}</div>
+
+    <!--Fourteenth game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 1153px; top: 619px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[13] }}">{{ arr1[13] }}</option>
+        <option value="{{ arr2[13] }}">{{ arr2[13] }}</option>
+    </select>
+    <div class="teamNamesRight" style="top: 649px">{{ arr2[13] }}</div>
+    <div class="teamNamesRight" style="top: 605px">{{ arr1[13] }}</div>
+
+    <!--Fifteenth game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 1153px; top: 726px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[14] }}">{{ arr1[14] }}</option>
+        <option value="{{ arr2[14] }}">{{ arr2[14] }}</option>
+    </select>
+    <div class="teamNamesRight" style="top: 756px">{{ arr2[14] }}</div>
+    <div class="teamNamesRight" style="top: 712px">{{ arr1[14] }}</div>
+
+    <!--Sixteenth game-->
+    <select id="theSelect" class="form-select" aria-label="Default select example" style="width: 250px; height: 27px; left: 1153px; top: 833px; position: absolute; background: #D9D9D9; text-align: center">
+        <option selected></option>
+        <option value="{{ arr1[15] }}">{{ arr1[15] }}</option>
+        <option value="{{ arr2[15] }}">{{ arr2[15] }}</option>
+    </select>
+    <div class="teamNamesRight" style="top: 863px">{{ arr2[15] }}</div>
+
+    <!--Left row of spread boxes-->
+    <div class="miniOddsLeft" style="top: 97px">{{ arr3[0] }}</div>
+    <div class="miniOddsLeft" style="top: 205px">{{ arr3[1] }}</div>
+    <div class="miniOddsLeft" style="top: 311px">{{ arr3[2] }}</div>
+    <div class="miniOddsLeft" style="top: 419px">{{ arr3[3] }}</div>
+    <div class="miniOddsLeft" style="top: 527px">{{ arr3[4] }}</div>
+    <div class="miniOddsLeft" style="top: 635px">{{ arr3[5] }}</div>
+    <div class="miniOddsLeft" style="top: 741px">{{ arr3[6] }}</div>
+    <div class="miniOddsLeft" style="top: 849px">{{ arr3[7] }}</div>
+
+    <!--Right row of spread boxes-->
+    <div class="miniOddsRight" style="top: 98px">{{ arr3[8] }}</div>
+    <div class="miniOddsRight" style="top: 206px">{{ arr3[9] }}</div>
+    <div class="miniOddsRight" style="top: 312px">{{ arr3[10] }}</div>
+    <div class="miniOddsRight" style="top: 420px">{{ arr3[11] }}</div>
+    <div class="miniOddsRight" style="top: 528px">{{ arr3[12] }}</div>
+    <div class="miniOddsRight" style="top: 636px">{{ arr3[13] }}</div>
+    <div class="miniOddsRight" style="top: 742px">{{ arr3[14] }}</div>
+    <div class="miniOddsRight" style="top: 850px">{{ arr3[15] }}</div>
+
+
+    <div style="width: 263px; height: 57px; left: 624px; top: 904px; position: absolute; background: #D9D9D9; text-align: center">Submit Picks!</div>
+
+
+    <!--
     <div class="childUnorderedList">
         <div class="pickDisplay"><ol class="list-group list-group-flush" reversed id="picks">
             {% for pick in user.notes %}
@@ -96,5 +245,6 @@
         </ol>
     </div>
     </div>
-</div>
+    -->
+
 {% endblock %}
