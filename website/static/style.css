@@ -194,3 +194,15 @@ tr:nth-child(even) {
     position:relative;
     left: 10px;
 }
+
+.favoriteTeam {
+    background-color:#D5F5E3;
+}
+
+.underdogTeam {
+    background-color:#FADBD8;
+}
+
+.rulesHeader {
+    text-align: center;
+}
